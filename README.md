@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+    <img alt="Static Badge" src="https://img.shields.io/badge/v10.3.3-green?label=npm&color=blue">
    <img src="" alt="Unity Version">
    <img src="" alt="Game Version">
    <img src="" alt="License">
