@@ -1,4 +1,4 @@
-### Greenbook
+# Greenbook
 
 <p align="center">
     <img alt="TypeScript Badge" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
@@ -9,5 +9,5 @@
 </p>
 
 <p>
-
+Это интернет магазин электронных книг. В проекте реализованы авторизация и регистрация, карзина, категории. 
 </p>
