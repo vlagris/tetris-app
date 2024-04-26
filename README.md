@@ -1,15 +1,15 @@
 # Tetris
 
 <p>
-    <img alt="NPM Badge" src="https://img.shields.io/badge/v10.3.3-green?label=npm&color=blue">
+    <img alt="NPM Badge" src="https://img.shields.io/badge/v10.2.3-green?label=npm&color=blue">
 </p>
 
 <p>
-    Веб версия игры Tetris на React
+    Веб версия игры Tetris сделанная на React
 </p>
 
 ## Tech Stack
 - TypeScript
 - React
-- Redux
 - SASS
+- Vite
