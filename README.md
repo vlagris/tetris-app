@@ -18,7 +18,6 @@
 
 ## Quick Start
 
-#### Prerequisites
 The following must be installed on your computer:
 - Git
 - Node.js
