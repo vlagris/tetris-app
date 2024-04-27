@@ -22,7 +22,6 @@
 
 
 <details><summary><b>Скриншоты:</b></summary>
-| ![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg "Start Game") | | :--: | | *Main page* |
- ...  
-| ![Swagger](/pictures/5.jpg "Swagger") | | *Swagger* | 
+    <img alt="Start Game" href="https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg">
+ ![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg "Start Game") 
 </details>
