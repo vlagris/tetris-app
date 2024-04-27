@@ -16,6 +16,24 @@
 - Vite
 
 
+## Screenshots:
+<details>
+    <summary>Click to expand!</summary>
+    <div align="center"> 
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
+        <p><i>Start Game</i></p>
+        <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
+        <p><i>Game play</i></p>
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/game-over.jpg">
+        <p><i>Game Over</i></p>
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/paused.jpg">
+        <p><i>Paused</i></p>
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg">
+        <p><i>Help</i></p>
+    </div>
+</details>
+
+
 ## Quick Start
 
 The following must be installed on your computer:
@@ -43,18 +61,4 @@ npm run dev
 Open http://localhost:5173 in your browser to view the project.
 
 
-<details>
-    <summary><h2>Screenshots:</h2></summary>
-    <div align="center"> 
-        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
-        <p><i>Start Game</i></p>
-        <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
-        <p><i>Game play</i></p>
-        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/game-over.jpg">
-        <p><i>Game Over</i></p>
-        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/paused.jpg">
-        <p><i>Paused</i></p>
-        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg">
-        <p><i>Help</i></p>
-    </div>
-</details>
+
