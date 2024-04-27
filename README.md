@@ -24,6 +24,6 @@
     <p align="center"><i>Game Over</i></p>
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/paused.jpg">
     <p align="center"><i>Paused</i></p>
-    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/Help.jpg">
+    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg">
     <p align="center"><i>Help</i></p>
 </details>
