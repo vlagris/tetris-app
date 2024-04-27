@@ -1,13 +1,11 @@
-import { createContext } from 'react';
-import {GameState} from "@/types.ts";
+import {createContext} from 'react';
+import {GameState, ModalState} from "@/types.ts";
 
 
 interface IGameStateContext {
   gameState: GameState,
   startGame: () => void,
   gameOver: () => void,
-  onPause: () => void,
-  offPause: () => void,
   togglePause: () => void,
   updateGameCounters: (rows: number) => void,
 }
@@ -15,16 +13,13 @@ interface IGameStateContext {
 const defaultState: IGameStateContext = {
   gameState: {
     game: false,
-    gameOver: false,
-    pause: false,
+    modalState: ModalState.startGame,
     scope: 0,
     level: 0,
     lines: 0,
   },
   startGame: () => {},
   gameOver: () => {},
-  onPause: () => {},
-  offPause: () => {},
   togglePause: () => {},
   updateGameCounters: () => {},
 }

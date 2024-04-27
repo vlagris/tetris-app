@@ -1,6 +1,6 @@
 import {useContext, useEffect, useState} from "react";
 import GameStateContext from "@/context/GameStateContext.ts";
-import {Shape} from "@/types.ts";
+import {ModalState, Shape} from "@/types.ts";
 import randomShape from "@/utils/randomShape.ts";
 import {BOARD_WIDTH} from "@/constants.ts";
 
@@ -9,15 +9,15 @@ import {BOARD_WIDTH} from "@/constants.ts";
 function useShapes() {
   const {gameState} = useContext(GameStateContext);
   const [shape, setShape] = useState<Shape>(randomShape());
-  const [shapeShadow, setShapeShadow] = useState<Shape>(shape);
   const [nextShape, setNextShape] = useState<Shape>(randomShape());
 
+
   useEffect(() => {
-    if (gameState.game && !gameState.gameOver) {
+    if (gameState.game && gameState.modalState === ModalState.none) {
       setShape(randomShape());
       setNextShape(randomShape());
     }
-  }, [gameState.game, gameState.gameOver]);
+  }, [gameState.game]);
 
 
   useEffect(() => {
@@ -26,10 +26,12 @@ function useShapes() {
     }
   }, [nextShape]);
 
+
   function switchShapes() {
     setShape(nextShape);
     setNextShape(randomShape());
   }
+
 
   const moveShape = {
     left: (shape: Shape): Shape => ({...shape, x: shape.x - 1}),
@@ -47,11 +49,10 @@ function useShapes() {
 
       return { ...shape, matrix, x }
     },
-    fullDrop: () => shapeShadow
   }
 
 
-  return { shape, setShape, setShapeShadow, nextShape, switchShapes, moveShape };
+  return { shape, setShape, nextShape, switchShapes, moveShape };
 }
 
 

@@ -1,28 +1,53 @@
-import {useContext} from 'react';
+import React, {useContext, useState} from 'react';
+import {ModalState} from "@/types.ts";
 import {createPortal} from "react-dom";
 import GameStateContext from "@/context/GameStateContext.ts";
+import useKeyboardControls from "@/hooks/useKeyboardControls.ts";
 import StartMenu from "@components/Modal/StartMenu.tsx";
 import PauseMenu from "@components/Modal/PauseMenu.tsx";
 import GameOverMenu from "@components/Modal/GameOverMenu.tsx";
-import Panel from "@components/RightSidebar/Panel.tsx";
+import HelpMenu from "@components//Modal/HelpMenu.tsx";
 
 
 export type ModalMenuProps = {
   startGame?: () => void,
-  offPause?: () => void
+  togglePause?: () => void,
+  toggleHelp?: () => void,
+}
+
+type ModalComponent = {
+  [key in ModalState]: ( (props: ModalMenuProps) => React.JSX.Element ) | null
+} & {
+  help: (props: ModalMenuProps) => React.JSX.Element
+}
+
+
+const ModalComponentMap: ModalComponent = {
+  help: (props: ModalMenuProps) => <HelpMenu {...props}/>,
+  [ModalState.startGame]: (props: ModalMenuProps) => <StartMenu {...props}/>,
+  [ModalState.gameOver]: (props: ModalMenuProps) => <GameOverMenu {...props}/>,
+  [ModalState.pause]: (props: ModalMenuProps) => <PauseMenu {...props}/>,
+  [ModalState.none]: null,
 }
 
 
 function Modal() {
-  const {gameState, startGame, offPause} = useContext(GameStateContext);
-  let Component = null;
+  const {gameState, startGame, togglePause} = useContext(GameStateContext);
+  const [helpMenu, setHelpMenu] = useState(false);
+  const Component = ModalComponentMap[helpMenu? "help" : gameState.modalState];
+  useKeyboardControls([{
+    codes: ["Escape"],
+    callback: () => {
+      if (helpMenu) {
+        toggleHelp();
+      } else {
+        togglePause()
+      }
+    }
+  }]);
 
-  if (gameState.gameOver) {
-    Component = ({startGame}: ModalMenuProps) => <GameOverMenu startGame={startGame}/>
-  } else if (gameState.pause) {
-    Component = ({offPause}: ModalMenuProps) => <PauseMenu offPause={offPause}/>
-  } else if (!gameState.game) {
-    Component = ({startGame}: ModalMenuProps) => <StartMenu startGame={startGame}/>
+  function toggleHelp() {
+    setHelpMenu(prev => !prev);
   }
 
 
@@ -33,11 +58,13 @@ function Modal() {
           <div className="modal">
             <div className="modal-panel-white-border">
               <div className="modal-panel-gray-border">
-                  {/*<Panel>*/}
                 <div className="modal-panel">
-                  <Component startGame={startGame} offPause={offPause}/>
+                  <Component
+                    startGame={startGame}
+                    toggleHelp={toggleHelp}
+                    togglePause={togglePause}
+                  />
                 </div>
-                  {/*</Panel>*/}
               </div>
             </div>
           </div>

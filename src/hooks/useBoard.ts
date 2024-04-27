@@ -1,7 +1,7 @@
 import {useContext, useEffect, useState} from "react";
 import isRowFull from "@/utils/isRowFull.ts";
 import createBoard from "@/utils/createBoard.ts";
-import {CellOptions, GameBoard, NumberCell, Shape} from "@/types";
+import {CellOptions, GameBoard, ModalState, NumberCell, Shape} from "@/types";
 import GameStateContext from "@/context/GameStateContext.ts";
 import {BOARD_HEIGHT, BOARD_WIDTH} from "@/constants.ts";
 
@@ -35,10 +35,10 @@ function useBoard(shape: Shape) {
 
 
   useEffect(() => {
-    if (gameState.game && !gameState.gameOver) {
+    if (gameState.game && gameState.modalState === ModalState.none) {
       setBoard(createBoard(BOARD_WIDTH, BOARD_HEIGHT));
     }
-  }, [gameState.game, gameState.gameOver]);
+  }, [gameState.game]);
 
 
   useEffect(() => {

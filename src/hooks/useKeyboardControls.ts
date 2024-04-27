@@ -1,29 +1,16 @@
-import {useContext, useEffect, useRef} from "react";
-import GameStateContext from "@/context/GameStateContext.ts";
+import {useEffect, useRef} from "react";
 
 
-enum MovementsNames {
-  left = "left",
-  right = "right",
-  rotate = "rotate",
-  drop = "drop",
-  fullDrop = "fullDrop",
+type KeyboardControlsConfigItem = {
+  codes: string[],
+  repeat?: boolean,
+  callback: () => void
 }
-
-type KeyDownConfig = { [key in MovementsNames]: () => void };
-
+type KeyboardControlsConfig = KeyboardControlsConfigItem[];
 
 
-const movementsCodesMap: {[key in MovementsNames]: string[]} = {
-  [MovementsNames.left]: ["KeyA", "ArrowLeft"],
-  [MovementsNames.right]: ["KeyD", "ArrowRight"],
-  [MovementsNames.rotate]: ["KeyW", "ArrowUp"],
-  [MovementsNames.drop]: ["KeyS", "ArrowDown"],
-  [MovementsNames.fullDrop]: ["Space"],
-}
-function useKeyboardControls(keyDownConfig: KeyDownConfig): void {
-  const {togglePause} = useContext(GameStateContext);
-  const keyDownConfigRef = useRef<KeyDownConfig>({});
+function useKeyboardControls(keyDownConfig: KeyboardControlsConfig): void {
+  const keyDownConfigRef = useRef<KeyboardControlsConfig>([]);
 
 
   useEffect(() => {
@@ -33,19 +20,16 @@ function useKeyboardControls(keyDownConfig: KeyDownConfig): void {
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
-      if (event.code === "Escape" && !event.repeat) {
-        togglePause()
-      }
-
-      Object.keys(keyDownConfigRef.current).forEach(movement => {
-        if(event.repeat && movement !== MovementsNames.drop) {
+      keyDownConfigRef.current.forEach(item => {
+        if (event.repeat && !item.repeat) {
           return;
         }
-        if (movementsCodesMap[movement as MovementsNames].includes(event.code)) {
-          keyDownConfigRef.current[movement as MovementsNames]()
+        if (item.codes.includes(event.code)) {
+          item.callback()
         }
-      });
+      })
     }
+
 
     document.addEventListener("keydown", handleKeyDown, true);
     return () => {
@@ -55,4 +39,3 @@ function useKeyboardControls(keyDownConfig: KeyDownConfig): void {
 }
 
 export default useKeyboardControls;
-

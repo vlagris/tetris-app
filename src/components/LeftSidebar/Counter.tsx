@@ -8,7 +8,7 @@ function Counter({title, value}: {title: string, value: number}) {
         <h3 className="counter-title">
           {title}
         </h3>
-        <p className="counter-value">
+        <p className="counter-count">
           {value}
         </p>
       </Panel>

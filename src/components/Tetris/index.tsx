@@ -1,4 +1,4 @@
-import {useContext, useEffect} from "react";
+import {useContext, useEffect, useState} from "react";
 import {GameBoard, Shape} from "@/types.ts";
 import GameStateContext from "@/context/GameStateContext.ts";
 import useShapes from "@/hooks/useShapes.ts";
@@ -12,15 +12,9 @@ import RightSidebar from "@components/RightSidebar";
 
 
 function Tetris() {
-  const {gameOver} = useContext(GameStateContext);
-  const {
-    shape,
-    setShape,
-    setShapeShadow,
-    nextShape,
-    switchShapes,
-    moveShape
-  } = useShapes();
+  const {gameState, gameOver} = useContext(GameStateContext);
+  const {shape, setShape, nextShape, switchShapes, moveShape} = useShapes();
+  const [shapeShadow, setShapeShadow] = useState<Shape>();
   const {board, setBoard, isValidMove, saveShape, addShadow} = useBoard(shape);
   useKeyboardControls(getKeyboardControlsConfig());
   useInterval(gameTick, 1000);
@@ -30,14 +24,17 @@ function Tetris() {
     let newShapeShadow = shape;
 
     board.forEach(() => {
-      const intermediateResult = moveShape.drop(newShapeShadow)
-      if (isValidMove(board, intermediateResult)) {
-        newShapeShadow = intermediateResult;
+      const result = moveShape.drop(newShapeShadow)
+      if (isValidMove(board, result)) {
+        newShapeShadow = result;
       }
     })
-    setShapeShadow(newShapeShadow);
-    addShadow(newShapeShadow);
-  }, [shape]);
+
+    if (gameState.game) {
+      setShapeShadow(newShapeShadow);
+      addShadow(newShapeShadow);
+    }
+  }, [shape, gameState.game]);
 
 
   function checkNextShape(board: GameBoard, nextShape: Shape) {
@@ -78,23 +75,38 @@ function Tetris() {
 
 
   function getKeyboardControlsConfig() {
-    return {
-      left: () => { checkMoveShape(moveShape.left(shape)) },
-      right: () => { checkMoveShape(moveShape.right(shape)) },
-      rotate: () => { checkMoveShape(moveShape.rotate(shape)) },
-      drop: () => { checkMoveShape(moveShape.drop(shape)) },
-      fullDrop: () => {
-        setBoard(prev => {
-          const newShape = moveShape.fullDrop();
-          if (isValidMove(prev, newShape)) {
-            prev = saveShape(prev, newShape);
-          }
-
-          checkNextShape(prev, nextShape);
-          return prev;
-        })
-      }
-    }
+    return [
+      {
+        codes: ["KeyA", "ArrowLeft"],
+        callback: () => { checkMoveShape(moveShape.left(shape)) },
+      },
+      {
+        codes: ["KeyD", "ArrowRight"],
+        callback: () => { checkMoveShape(moveShape.right(shape)) },
+      },
+      {
+        codes: ["KeyW", "ArrowUp"],
+        callback: () => { checkMoveShape(moveShape.rotate(shape)) },
+      },
+      {
+        codes: ["KeyS", "ArrowDown"],
+        repeat: true,
+        callback: () => { checkMoveShape(moveShape.drop(shape)) },
+      },
+      {
+        codes: ["Space"],
+        callback: () => {
+          setBoard(prev => {
+            const newShape = shapeShadow;
+            if (newShape && isValidMove(prev, newShape)) {
+              prev = saveShape(prev, newShape);
+            }
+            checkNextShape(prev, nextShape);
+            return prev;
+          })
+        },
+      },
+    ]
   }
 
 

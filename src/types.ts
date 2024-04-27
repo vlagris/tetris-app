@@ -28,10 +28,16 @@ export type ShapesMatrices =  {
   [key in ShapeNames]: ShapeMatrix
 }
 
+export enum ModalState {
+  none,
+  startGame,
+  gameOver,
+  pause,
+}
+
 export type GameState = {
   game: boolean,
-  gameOver: boolean,
-  pause: boolean,
+  modalState: ModalState,
   scope: number,
   level: number,
   lines: number,

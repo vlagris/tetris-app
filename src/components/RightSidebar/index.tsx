@@ -5,12 +5,12 @@ import NextShape from "@components/RightSidebar/NextShape.tsx";
 import PauseButton from "@components/RightSidebar/PauseButton.tsx";
 
 function RightSidebar({nextShape}: {nextShape: Shape}) {
-  const {gameState, onPause} = useContext(GameStateContext);
+  const {gameState, togglePause} = useContext(GameStateContext);
 
   return (
     <div className="sidebar right-sidebar">
       <NextShape shape={gameState.game? nextShape : null}/>
-      <PauseButton onClick={onPause}/>
+      <PauseButton onClick={togglePause}/>
     </div>
   );
 }
