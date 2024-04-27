@@ -5,7 +5,7 @@
 </p>
 
 <p>
-    Веб версия игры Tetris сделанная на React
+    Web version of the Tetris game on React.
 </p>
 
 
