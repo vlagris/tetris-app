@@ -43,9 +43,9 @@ npm run dev
 Open http://localhost:5173 in your browser to view the project.
 
 
-<details>
+<details align="center">
     <summary><h2>Screenshots:</h2></summary>
-    <div align="center"> 
+    <div> 
         <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
         <p><i>Start Game</i></p>
         <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
