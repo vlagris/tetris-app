@@ -15,6 +15,7 @@
 - Vite
 
 ![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg?raw=true)
+![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg)
 
 
 
