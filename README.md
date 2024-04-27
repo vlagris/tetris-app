@@ -32,6 +32,9 @@
 
 ## Quick Start
 
-#### Cloning the Repository
 <strong>Cloning the Repository</strong>
+```
+git clone https://github.com/vlagris/tetris.git
+cd tetris
+```
 
