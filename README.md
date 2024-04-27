@@ -16,7 +16,8 @@
 - Vite
 
 
-<h2> <details><summary>Скриншоты:</summary>
+<details>
+    <h2><summary>Скриншоты:</summary></h2>
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
     <p align="center"><i>Start Game</i></p>
     <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
@@ -27,4 +28,4 @@
     <p align="center"><i>Paused</i></p>
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg">
     <p align="center"><i>Help</i></p>
-</details> </h2>
+</details> 
