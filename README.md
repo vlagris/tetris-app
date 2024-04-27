@@ -45,14 +45,16 @@ Open http://localhost:5173 in your browser to view the project.
 
 <details>
     <summary><h2>Screenshots:</h2></summary>
-    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg" width="90%">
-    <p align="center"><i>Start Game</i></p>
-    <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
-    <p align="center"><i>Game play</i></p>
-    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/game-over.jpg">
-    <p align="center"><i>Game Over</i></p>
-    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/paused.jpg">
-    <p align="center"><i>Paused</i></p>
-    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg">
-    <p align="center"><i>Help</i></p>
+    <div align="center"> 
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg" width="90%">
+        <p><i>Start Game</i></p>
+        <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg" width="90%">
+        <p><i>Game play</i></p>
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/game-over.jpg" width="90%">
+        <p><i>Game Over</i></p>
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/paused.jpg" width="90%">
+        <p><i>Paused</i></p>
+        <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg" width="90%">
+        <p><i>Help</i></p>
+    </div>
 </details>
