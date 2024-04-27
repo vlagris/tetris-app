@@ -19,9 +19,9 @@
 ## Quick Start
 
 The following must be installed on your computer:
-- Git
-- Node.js
-- npm
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
 
 
 #### Cloning the Repository
