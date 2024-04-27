@@ -17,7 +17,7 @@
 
 
 <details>
-    <summary><h2>Скриншоты:</h2></summary>
+    <summary><h2>Screenshots:</h2></summary>
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
     <p align="center"><i>Start Game</i></p>
     <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
@@ -29,3 +29,8 @@
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg">
     <p align="center"><i>Help</i></p>
 </details>
+
+## Quick Start
+
+###### Cloning the Repository
+
