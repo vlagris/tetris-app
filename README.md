@@ -45,7 +45,7 @@ Open http://localhost:5173 in your browser to view the project.
 
 <details>
     <summary><h2>Screenshots:</h2></summary>
-    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
+    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg" width="90%">
     <p align="center"><i>Start Game</i></p>
     <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
     <p align="center"><i>Game play</i></p>
