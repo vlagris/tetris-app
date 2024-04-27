@@ -22,6 +22,5 @@
 
 
 <details><summary><b>Скриншоты:</b></summary>
-    <img alt="Start Game" href="https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg">
- ![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg "Start Game") 
+    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg">
 </details>
