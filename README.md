@@ -15,4 +15,4 @@
 - Vite
 
 
-<details><summary><b>Скриншоты:</b></summary>
+<details><summary><h2>Скриншоты:</h2></summary>
