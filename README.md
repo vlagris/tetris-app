@@ -32,7 +32,7 @@
 
 ## Quick Start
 
-### Cloning the Repository
+#### Cloning the Repository
 ```
 git clone git@github.com:vlagris/tetris-app.git
 cd tetris-app
