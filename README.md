@@ -33,4 +33,5 @@
 ## Quick Start
 
 #### Cloning the Repository
+<strong>Cloning the Repository</strong>
 
