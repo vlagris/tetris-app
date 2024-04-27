@@ -16,3 +16,4 @@
 
 
 <details><summary><h2>Скриншоты:</h2></summary>
+![Start Game](https://github.com/vlagris/tetris/screenshots/main.jpg?raw=true)
