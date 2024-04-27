@@ -20,5 +20,5 @@
 
 <details><summary><h2>Скриншоты:</h2></summary>
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg">
-    <p align="center">Start Game</p>
+    <i align="center">Start Game</i>
 </details>
