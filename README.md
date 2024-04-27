@@ -8,14 +8,7 @@
     Веб версия игры Tetris сделанная на React
 </p>
 
-## Tech Stack
-- TypeScript
-- React
-- SASS
-- Vite
-
-
-<details><summary><h2>Скриншоты:</h2></summary>
+<details><summary><p>Скриншоты:</p></summary>
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
     <p align="center"><i>Start Game</i></p>
     <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
@@ -27,3 +20,12 @@
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/help.jpg">
     <p align="center"><i>Help</i></p>
 </details>
+
+
+## Tech Stack
+- TypeScript
+- React
+- SASS
+- Vite
+
+
