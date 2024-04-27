@@ -14,9 +14,15 @@
 - SASS
 - Vite
 
-![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg?raw=true)
-![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg)
+![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg "Start Game")
 
 
 
 <details><summary><h2>Скриншоты:</h2></summary>
+
+
+<details><summary><b>Скриншоты:</b></summary>
+| ![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg "Start Game") | | :--: | | *Main page* |
+ ...  
+| ![Swagger](/pictures/5.jpg "Swagger") | | *Swagger* | 
+</details>
