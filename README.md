@@ -13,3 +13,6 @@
 - React
 - SASS
 - Vite
+
+
+<details><summary><b>Скриншоты:</b></summary>
