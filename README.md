@@ -32,9 +32,21 @@
 
 ## Quick Start
 
-<strong>Cloning the Repository</strong>
+### Cloning the Repository
 ```
-git clone https://github.com/vlagris/tetris.git
-cd tetris
+git clone git@github.com:vlagris/tetris-app.git
+cd tetris-app
+```
+
+<strong>Installation</strong>
+```
+npm install
+```
+
+<strong>Running the Project
+
+</strong>
+```
+npm run dev
 ```
 
