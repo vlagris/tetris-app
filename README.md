@@ -14,9 +14,6 @@
 - SASS
 - Vite
 
-![Start Game](https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg "Start Game")
-
-
 
 <details><summary><h2>Скриншоты:</h2></summary>
     <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/main.jpg">
