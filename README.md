@@ -16,6 +16,14 @@
 
 
 <details><summary><h2>Скриншоты:</h2></summary>
-    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/game play.jpg">
+    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
     <p align="center"><i>Start Game</i></p>
+    <img alt="Gameplay" src="https://github.com/vlagris/tetris/blob/main/screenshots/gameplay.jpg">
+    <p align="center"><i>Game play</i></p>
+    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/game-over.jpg">
+    <p align="center"><i>Game Over</i></p>
+    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/paused.jpg">
+    <p align="center"><i>Paused</i></p>
+    <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/Help.jpg">
+    <p align="center"><i>Help</i></p>
 </details>
