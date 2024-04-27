@@ -38,14 +38,12 @@ git clone git@github.com:vlagris/tetris-app.git
 cd tetris-app
 ```
 
-<strong>Installation</strong>
+#### Installation
 ```
 npm install
 ```
 
-<strong>Running the Project
-
-</strong>
+#### Running the Project
 ```
 npm run dev
 ```
