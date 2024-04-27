@@ -18,6 +18,13 @@
 
 ## Quick Start
 
+#### Prerequisites
+The following must be installed on your computer:
+- Git
+- Node.js
+- npm
+
+
 #### Cloning the Repository
 ```
 git clone git@github.com:vlagris/tetris-app.git
