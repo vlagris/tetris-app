@@ -1,6 +1,6 @@
-import {Matrix, NumberCell} from "@/types.ts";
+import {GameBoard, NumberCell} from "@/types.ts";
 
-function createBoard(width: number, height: number): Matrix {
+function createBoard(width: number, height: number): GameBoard {
   return Array(height).fill(NumberCell.Empty).map(() =>
          Array(width).fill(NumberCell.Empty));
 }
