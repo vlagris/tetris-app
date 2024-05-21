@@ -37,7 +37,7 @@ The following must be installed on your computer:
 
 #### Cloning the Repository
 ```
-git clone git@github.com:vlagris/tetris-app.git
+git clone https://github.com/vlagris/tetris-app.git
 cd tetris-app
 ```
 
