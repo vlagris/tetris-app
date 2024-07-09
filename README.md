@@ -4,21 +4,21 @@
     <img alt="NPM Badge" src="https://img.shields.io/badge/v10.2.3-green?label=npm&color=blue">
 </p>
 
-Web version of the Tetris game on React.
-
-[open project](https://vlagris.github.io/tetris-app/)
+Веб-версия игры Тетрис на React.
 
 
 
-## Table of Contents
+## Содержание
 
-1. [Tech Stack](#tech-stack)
-3. [Quick Start](#quick-start)
-4. [Screenshots](#screenshots)
+1. [Технологии](#технологии)
+3. [Быстрый старт](#быстрый-старт)
+3. [Ссылки](#ссылки)
+4. [Скриншоты](#скриншоты)
 
 
 
-## Tech Stack
+
+## Технологии
 - TypeScript
 - React
 - SASS
@@ -26,36 +26,42 @@ Web version of the Tetris game on React.
 
 
 
-## Quick Start
+## Быстрый старт
 
-The following must be installed on your computer:
+На вашем компьютере должно быть установлено следующее:
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/)
 
 
 
-#### Cloning the Repository
+#### Клонирование репозитория
 ```
 git clone https://github.com/vlagris/tetris-app.git
 cd tetris-app
 ```
 
-#### Installation
-Install the project dependencies using npm:
+#### Установка
+Установите зависимости проекта с помощью npm:
 ```
 npm install
 ```
 
-#### Running the Project
+#### Запуск проекта
 ```
 npm run dev
 ```
-Open http://localhost:5173 in your browser to view the project.
+Откройте http://localhost:5173 в вашем браузере, чтобы просмотреть проект.
 
 
 
-## Screenshots:
+## Ссылки:
+
+Проект [здесь](https://vlagris.github.io/tetris-app/)
+
+
+
+## Скриншоты:
 
 <div align="center"> 
   <img alt="Start Game" src="https://github.com/vlagris/tetris/blob/main/screenshots/start-game.jpg">
